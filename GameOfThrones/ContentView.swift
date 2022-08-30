@@ -53,6 +53,9 @@ struct ContentView: View {
 //                .foregroundColor(.white)
 //                .font(.system(size: 30))
 //        }
+        VStack{
+            Text("Game of Thrones")
+        }
         
         List(results, id: \.name) { item in
                     VStack(alignment: .leading) {
