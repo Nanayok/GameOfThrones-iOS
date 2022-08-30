@@ -64,7 +64,7 @@ struct ContentView: View {
                         //Text(item.coatOfArms)
                         
                         HStack{
-                            Image(systemName: "house")
+                            Image(systemName: "house").foregroundColor(.blue)
                             Text(item.name)
                         }.onTapGesture {
                             print("----> " + item.name)

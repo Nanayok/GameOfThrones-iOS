@@ -46,6 +46,7 @@ struct SplashScreenView: View {
 //                        //Text(item.coatOfArms)
 //                    }
 //        }.onAppear(perform: loadData)
+        
     
         if(isActive){
             ContentView()
@@ -53,20 +54,20 @@ struct SplashScreenView: View {
             VStack{
                 VStack{
 //                    Image(systemName: "hare.fill")
-                    Image(systemName: "ic_splash_logo")
+                    Image("ic_splash_logo")
                         .font(.system(size: 80))
 //                        .foregroundColor(.red)
-                    Text("Game of Thrones")
-                        .font(Font.custom("Baskerville", size:26))
-                        .foregroundColor(.black.opacity(0.80))
-                        .scaleEffect(size)
-                        .opacity(opacity)
-                        .onAppear{
-                            withAnimation(.easeIn(duration: 1.2)){
-                                self.size = 0.9
-                                self.opacity = 1.0
-                            }
-                        }
+//                    Text("Game of Thrones")
+//                        .font(Font.custom("Baskerville", size:26))
+//                        .foregroundColor(.black.opacity(0.80))
+//                        .scaleEffect(size)
+//                        .opacity(opacity)
+//                        .onAppear{
+//                            withAnimation(.easeIn(duration: 1.2)){
+//                                self.size = 0.9
+//                                self.opacity = 1.0
+//                            }
+//                        }
                 }
             }
             .onAppear{
