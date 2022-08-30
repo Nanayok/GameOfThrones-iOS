@@ -11,6 +11,9 @@
 		4639295F28BBB3DF009F0155 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4639295E28BBB3DF009F0155 /* ContentView.swift */; };
 		4639296128BBB3E3009F0155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4639296028BBB3E3009F0155 /* Assets.xcassets */; };
 		4639296428BBB3E3009F0155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4639296328BBB3E3009F0155 /* Preview Assets.xcassets */; };
+		4639296D28BBEA0C009F0155 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4639296C28BBEA0C009F0155 /* SplashScreenView.swift */; };
+		4639297128BC2C24009F0155 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4639297028BC2C24009F0155 /* Model.swift */; };
+		466F57FD28BE149800A09A3B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F57FC28BE149800A09A3B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		4639295E28BBB3DF009F0155 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4639296028BBB3E3009F0155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4639296328BBB3E3009F0155 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4639296C28BBEA0C009F0155 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		4639297028BC2C24009F0155 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		466F57FC28BE149800A09A3B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				4639295C28BBB3DF009F0155 /* GameOfThronesApp.swift */,
 				4639295E28BBB3DF009F0155 /* ContentView.swift */,
+				4639296C28BBEA0C009F0155 /* SplashScreenView.swift */,
+				466F57FC28BE149800A09A3B /* DetailView.swift */,
+				4639297028BC2C24009F0155 /* Model.swift */,
 				4639296028BBB3E3009F0155 /* Assets.xcassets */,
 				4639296228BBB3E3009F0155 /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				4639295F28BBB3DF009F0155 /* ContentView.swift in Sources */,
 				4639295D28BBB3DF009F0155 /* GameOfThronesApp.swift in Sources */,
+				4639296D28BBEA0C009F0155 /* SplashScreenView.swift in Sources */,
+				466F57FD28BE149800A09A3B /* DetailView.swift in Sources */,
+				4639297128BC2C24009F0155 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
