@@ -24,19 +24,18 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     
-    //var house: House
-    
-    // 5. Creare a static instance of Writer for your preview
+//    //  Creare a static instance of House for your preview
 //     static let housePreview = House(
 //         name: "Tiago",
 //         region: "Pereira",
 //         coatOfArms: "createwithswift.com"
 //
 //     )
-    
+ 
     static var previews: some View {
         DetailView()
-        /// // 5. Use the right SecondView initializator
-        //DetailView(house: housePreview)
+        //Use the right SecondView initializator
+              // DetailView(house: housePreview)
+
     }
 }

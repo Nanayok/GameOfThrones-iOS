@@ -13,7 +13,10 @@ struct ContentView: View {
     //@State private var showDetailView = false
     
     //Since the response is an array of Houses object
+    
     @State var results = [House]()
+    
+    @State var selectedItem: House? // <- track the selected item
     
             //Create the instance of house you want to pass to DetailView
 //        var houseForDetailView = House(
@@ -46,40 +49,34 @@ struct ContentView: View {
     
     
     var body: some View {
-//        ZStack{
-//            Color.blue
-//                .ignoresSafeArea()
-//            Text("Content View")
-//                .foregroundColor(.white)
-//                .font(.system(size: 30))
+
+        NavigationView {
+            
+//        VStack{
+//            Text("Game of Thrones")
 //        }
-        VStack{
-            Text("Game of Thrones")
-        }
         
         List(results, id: \.name) { item in
                     VStack(alignment: .leading) {
-                        //Text(item.name)
-                        //Text(item.region)
-                        //Text(item.coatOfArms)
-                        
-                        HStack{
-                            Image(systemName: "house").foregroundColor(.blue)
-                            Text(item.name)
-                        }.onTapGesture {
-                            print("----> " + item.name)
-                            //DetailView(results)
-                            //self.showDetailView.toggle()
-                            
-                        }
-                        //Add a sheet modifier to present DetailView modally
-//                        .sheet(isPresented: $showDetailView){
-//                            //DetailView()
-//                            //Use the new SecondView initializer
-//                            DetailView(house: houseForDetailView)
+                     
+                        NavigationLink(destination: DetailView()) {
+                                            
+                            HStack{
+                                Image(systemName: "house").foregroundColor(.blue)
+                                Text(item.name)
+                            }
+                        }.navigationTitle("Game of Thrones")
+
+//                        .onTapGesture {
+//                            print("----> " + item.name)
+//
+//
 //                        }
+   
                     }
         }.onAppear(perform: loadData)
+        
+    }
     }
 }
 

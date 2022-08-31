@@ -53,21 +53,8 @@ struct SplashScreenView: View {
         }else{
             VStack{
                 VStack{
-//                    Image(systemName: "hare.fill")
                     Image("ic_splash_logo")
                         .font(.system(size: 80))
-//                        .foregroundColor(.red)
-//                    Text("Game of Thrones")
-//                        .font(Font.custom("Baskerville", size:26))
-//                        .foregroundColor(.black.opacity(0.80))
-//                        .scaleEffect(size)
-//                        .opacity(opacity)
-//                        .onAppear{
-//                            withAnimation(.easeIn(duration: 1.2)){
-//                                self.size = 0.9
-//                                self.opacity = 1.0
-//                            }
-//                        }
                 }
             }
             .onAppear{

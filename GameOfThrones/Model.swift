@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct House: Codable {
+struct House: Codable, Identifiable {
+    
+    var id: String { name } // needed for `Identifiable`
+    
     let name: String
     let region: String
     let coatOfArms: String
