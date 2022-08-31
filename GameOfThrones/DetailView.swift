@@ -9,33 +9,33 @@ import SwiftUI
 
 struct DetailView: View {
     
-    //var house: House
+    let item: House
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//        VStack {
-//                    Text(house.name)
-//                    Text(house.region)
-//                    Text(house.coatOfArms)
-//
-//                }
+
+        VStack{
+                    Text("Name:").font(.system(size: 15))
+            Text(item.name).foregroundColor(.black).padding(.bottom, 10)
+            Text("Region:").font(.system(size: 15))
+            Text(item.region).foregroundColor(.black) .padding(.bottom, 10)
+            Text("Coat of Arms:").font(.system(size: 15))
+            Text(item.coatOfArms).foregroundColor(.black)
+                }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
-    
-//    //  Creare a static instance of House for your preview
-//     static let housePreview = House(
-//         name: "Tiago",
-//         region: "Pereira",
-//         coatOfArms: "createwithswift.com"
-//
-//     )
  
     static var previews: some View {
-        DetailView()
-        //Use the right SecondView initializator
-              // DetailView(house: housePreview)
+       // DetailView()
+        let writerPreview = House(
+            name: "Tiago",
+            region: "Pereira",
+            coatOfArms: "createwithswift.com"
+            
+        )
+        
+        DetailView(item: writerPreview)
 
     }
 }

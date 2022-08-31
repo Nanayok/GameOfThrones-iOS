@@ -59,7 +59,7 @@ struct ContentView: View {
         List(results, id: \.name) { item in
                     VStack(alignment: .leading) {
                      
-                        NavigationLink(destination: DetailView()) {
+                        NavigationLink(destination: DetailView(item: item)) {
                                             
                             HStack{
                                 Image(systemName: "house").foregroundColor(.blue)
